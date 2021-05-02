@@ -14,17 +14,24 @@
             <h1>Weather Dashboard</h1>
           </div>
     </header>
-
+<!--Starting the search for cities-->
     <div class="search">
         <h2>Search for a City:</h2>
         <input type="text" placeholder="Search..">
     </div>
 
     <form class="example" action="action_page.php">
-        <button type="submit"><i class="fa fa-search"></i></button>
+        <button type="submit" id="submit-button"><i class="fa fa-search"></i></button>
     </form>
 
-    <main class="history"></main>
+<!--Previous searches. Need to use local storage-->
+<!--Display current weather-->
+<div class="col-sm-12" id="current weather">
+    <h3 class="current city"></h3>
+    
+</div>
+
+<!--Enter other -->
 
     <script src="../weather/script.js"></script>
 
