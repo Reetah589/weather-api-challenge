@@ -5,7 +5,6 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href= "../weather/style.css"/>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>Weather Dashboard</title>
 </head>
 <body>
@@ -15,23 +14,30 @@
           </div>
     </header>
 <!--Starting the search for cities-->
-    <div class="search">
-        <h2>Search for a City:</h2>
-        <input type="text" placeholder="Search..">
-    </div>
+ <main class="flex-row justify-space-between">
+    <div class="col-12 col-md-4"></div>
+  
+    <div class="col-12 col-md-8"></div>
+  </main>
 
-    <form class="example" action="action_page.php">
-        <button type="submit" id="submit-button"><i class="fa fa-search"></i></button>
+  <div class="card">
+    <h3 class="card-header text-uppercase">Search for a City:</h3>
+    <form id="user-form" class="card-body">
+      <label class="form-label" for="city">City</label>
+      <input name="city" id="city" type="text" autofocus="true" class="form-input" />
+      <button type="search" class="btn">Search</button>
     </form>
+  </div>
 
-<!--Previous searches. Need to use local storage-->
-<!--Display current weather-->
-<div class="col-sm-12" id="current weather">
-    <h3 class="current city"></h3>
-    
-</div>
+<!--Enter Temp, Wind, Humidity, UV-->
+  <h4>Current City Weather</h4>
+  <div class="col-sm-12" id="current-weather">
+      <p>Temp:<span class="current" id="temp"></span></p>
+      <p>Wind:<span class="current" id="wind"></span></p>
+      <p>Humidity:<span class="current" id="humidity"></span></p>
+      <p>UV:<span class="current" id="uv"></span></p>
+  </div>
 
-<!--Enter other -->
 
     <script src="../weather/script.js"></script>
 

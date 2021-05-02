@@ -10,46 +10,9 @@
     font-size: 30px;
   }
 
-body h2 {
+body h3 {
     font-size: 40px;
 }  
   
-  /* the search box */
-.search input[type=text] {
-    float: left;
-    padding: 20px;
-    border: none;
-    margin-top: 8px;
-    margin-right: 16px;
-    font-size: 17px;
-  }
-  
-.search input[type=text] {
-      border: 1px solid #ccc;
-    }
 
-  
-  /* the submit button */
-  form.example button {
-    float: left;
-    padding: 5px;
-    background: darkblue;
-    color: white;
-    font-size: 17px;
-    border: 1px solid grey;
-    border-left: none; 
-    cursor: pointer;
-  }
-  
-  form.example button:hover {
-    background: darkblue;
-  }
-  
-  /* Clear floats */
-  form.example::after {
-    content: "";
-    clear: both;
-    display: table;
-  }
-  
   
