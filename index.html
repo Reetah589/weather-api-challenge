@@ -22,15 +22,16 @@
 
   <div class="card">
     <h3 class="card-header text-uppercase">Search for a City:</h3>
-    <form id="user-form" class="card-body">
+    <form id="user-form" class="card-body" onsubmit="displayWeather(event)">
       <label class="form-label" for="city">City</label>
-      <input name="city" id="city" type="text" autofocus="true" class="form-input" />
-      <button type="search" class="btn">Search</button>
+      <input name="city" id="city" type="text" autofocus="true" class="form-input"/>
+      <input type="submit" class="btn" value="Search"></input>
     </form>
   </div>
 
+
 <!--Enter Temp, Wind, Humidity, UV-->
-  <h4>Current City Weather</h4>
+  <h4 id="results-title">Current City Weather</h4>
   <div class="col-sm-12" id="current-weather">
       <p>Temp:<span class="current" id="temp"></span></p>
       <p>Wind:<span class="current" id="wind"></span></p>
@@ -39,7 +40,7 @@
   </div>
 
 
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
     <script src="../weather/script.js"></script>
-
 </body>
 </html>
